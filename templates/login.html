@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block container %}
+  
   <!-- Page Content -->
   <div class="container" style="min-height: 80vh;">
 
@@ -14,11 +15,12 @@
     <!-- Content Row -->
     <div class="row">
       <div class="col-lg-4 mb-4">
-        <form name="sentMessage" id="contactForm" novalidate>
+        <form name="sentMessage" id="contactForm" method="post" action="{% url 'django.contrib.auth.views.login' %}">
+          {% csrf_token %}
           <div class="control-group form-group">
             <div class="controls">
-              <label>Email*</label>
-              <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email.">
+              <label>Username*</label>
+              <input type="text" class="form-control" id="username" >
               <p class="help-block"></p>
             </div>
           </div>
