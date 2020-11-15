@@ -3,6 +3,7 @@ Django==3.1.3
 pytz==2020.4
 sqlparse==0.4.1
 <<<<<<< HEAD
+<<<<<<< HEAD
 djangorestframework
 requests
 django-allauth==0.41.0
@@ -17,3 +18,6 @@ whitenoise
 django-allauth==0.41.0
 requests
 >>>>>>> fac8fb9975081c10a1f685fed5d41a8370b61f98
+=======
+
+>>>>>>> 5bbdb562fe4a391eec10c415c4a45bd618c31937
