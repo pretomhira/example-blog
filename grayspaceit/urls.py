@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from posts.views import posts
+from rest_framework import permissions
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,6 @@ urlpatterns = [
     path('auth/', include('authentication.urls')),
     path('posts/', include('posts.urls')),
     path('', include('posts.urls')),
+
+    path('api/auth/',include('authentication.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

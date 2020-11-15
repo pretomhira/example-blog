@@ -10,6 +10,10 @@ asgiref = "==3.3.0"
 pytz = "==2020.4"
 sqlparse = "==0.4.1"
 Django = "==3.1.3"
+djangorestframework = "*"
+requests = "*"
+django-allauth = "==0.41.0"
+pyjwt = "*"
 
 [requires]
 python_version = "3.7"
